@@ -10,7 +10,7 @@ fn find_odd(arr: &[i32]) -> i32 {
 }
 
 #[cfg(test)]
-mod test {
+mod tests {
     use super::find_odd;
 
     #[test]

@@ -11,7 +11,7 @@ fn fizz_buzz(n: u32) -> Vec<String> {
 }
 
 #[cfg(test)]
-mod test {
+mod tests {
     use super::fizz_buzz;
 
     #[test]
