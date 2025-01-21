@@ -1,11 +1,14 @@
 #[cfg(test)]
 fn is_palindrome(words: &str) -> bool {
-    for i in 0..words.len() / 2 {
-        if words.chars().nth(i).unwrap() != words.chars().nth(words.len() - i - 1).unwrap() {
+    let words_len = words.len();
+    for i in 0..words_len / 2 {
+        let word = words.chars().nth(i).unwrap();
+        let reverse_word = words.chars().nth(words_len - 1 - i).unwrap();
+        if word != reverse_word {
             return false;
         }
     }
-    return true;
+    true
 }
 
 #[cfg(test)]
@@ -14,13 +17,13 @@ mod tests {
 
     #[test]
     fn test_is_palindrome_true() {
-        assert_eq!(is_palindrome("wow"), true);
-        assert_eq!(is_palindrome("121"), true);
+        assert!(is_palindrome("wow"));
+        assert!(is_palindrome("121"));
     }
 
     #[test]
     fn test_is_palindrome_false() {
-        assert_eq!(is_palindrome("words"), false);
-        assert_eq!(is_palindrome("Hello world!"), false);
+        assert!(!is_palindrome("words"));
+        assert!(!is_palindrome("Hello world!"));
     }
 }
