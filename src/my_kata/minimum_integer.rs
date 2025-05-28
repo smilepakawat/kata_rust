@@ -1,4 +1,4 @@
-#[cfg(test)]
+#![allow(warnings)]
 fn min_num(arr: &[i32]) -> i32 {
     *arr.iter().reduce(|acc, e| acc.min(e)).unwrap()
 }

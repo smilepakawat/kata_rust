@@ -1,4 +1,4 @@
-#[cfg(test)]
+#![allow(warnings)]
 fn is_palindrome(words: &str) -> bool {
     let words_len = words.len();
     for i in 0..words_len / 2 {

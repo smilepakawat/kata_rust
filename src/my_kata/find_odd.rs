@@ -1,4 +1,4 @@
-#[cfg(test)]
+#![allow(warnings)]
 fn find_odd(arr: &[i32]) -> i32 {
     let mut result = 0;
 

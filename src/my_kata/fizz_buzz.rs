@@ -1,4 +1,4 @@
-#[cfg(test)]
+#![allow(warnings)]
 fn fizz_buzz(n: u32) -> Vec<String> {
     (1..=n)
         .map(|e| match e {
