@@ -5,3 +5,4 @@ pub mod palindrome;
 pub mod multiple_of_3_5;
 pub mod even_fibonacci_numbers;
 pub mod largest_prime_factor;
+pub mod smallest_multiple;
