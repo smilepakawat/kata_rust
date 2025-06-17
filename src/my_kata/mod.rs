@@ -7,3 +7,4 @@ pub mod even_fibonacci_numbers;
 pub mod largest_prime_factor;
 pub mod smallest_multiple;
 pub mod largest_palindrome_product;
+pub mod sum_square_difference;
