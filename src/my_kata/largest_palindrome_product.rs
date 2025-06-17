@@ -1,21 +1,19 @@
 // Find the largest palindrome made from the product of x-digit numbers.
 #![allow(warnings)]
-fn largest_palindrome_product_by_digit(digit: u32) -> u32 {
-    let mut counter: u32 = 0;
-    for i in 0..digit {
-        counter += 9 * u32::pow(10, i);
-    }
-    let mut res = Vec::new();
+fn largest_palindrome_product_by_digit(digit: u8) -> u32 {
+    let mut counter: u32 = (0..digit).map(|d| 9 * u32::pow(10, d as u32)).sum();
+    let mut res: u32 = 0;
     for i in (1..=counter).rev() {
         for j in (1..=counter).rev() {
-            if is_palindrome_number(i * j) {
-                res.push(i * j);
+            if res >= i * j {
                 break;
+            }
+            if is_palindrome_number(i * j) {
+                res = i * j;
             }
         }
     }
-    res.sort();
-    return res.pop().unwrap();
+    return res;
 }
 
 fn is_palindrome_number(n: u32) -> bool {
