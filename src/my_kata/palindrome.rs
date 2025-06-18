@@ -19,6 +19,7 @@ mod tests {
     fn test_is_palindrome_true() {
         assert!(is_palindrome("wow"));
         assert!(is_palindrome("121"));
+        assert!(is_palindrome("9901099"));
     }
 
     #[test]

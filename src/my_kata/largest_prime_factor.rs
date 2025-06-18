@@ -1,6 +1,6 @@
 // What is the largest prime factor of the number
 #![allow(warnings)]
-pub fn largest_prime_factor(n: u64) -> u64 {
+fn largest_prime_factor(n: u64) -> u64 {
     let mut count: u64 = n / 2;
     let limit = (n as f64).sqrt() as u64;
     for i in (1..=limit).rev() {
