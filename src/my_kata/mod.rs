@@ -10,3 +10,4 @@ pub mod largest_palindrome_product;
 pub mod sum_square_difference;
 pub mod find_prime;
 pub mod largest_product_in_series;
+pub mod sumation_of_primes;
