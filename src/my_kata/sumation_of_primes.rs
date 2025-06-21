@@ -36,7 +36,7 @@ fn is_prime(n: u64) -> bool {
 #[cfg(test)]
 mod tests {
     use super::*;
-    
+
     #[test]
     fn test_find_summary_primes() {
         assert_eq!(17, find_sumary_primes(10));
