@@ -3,5 +3,5 @@
 version = 4
 
 [[package]]
-name = "kata_rust"
+name = "kata_01"
 version = "0.1.0"
