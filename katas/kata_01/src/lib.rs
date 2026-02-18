@@ -14,10 +14,7 @@
 /// ```
 /// use kata_01::two_sum;
 ///
-/// let nums = vec![2, 7, 11, 15];
-/// let target = 9;
-/// let result = two_sum(nums, target);
-/// assert_eq!(result, Some((0, 1)));
+/// assert_eq!(two_sum(vec![2, 7, 11, 15], 9), Some((0, 1)));
 /// ```
 pub fn two_sum(nums: Vec<i32>, target: i32) -> Option<(usize, usize)> {
     for i in 0..nums.len() {
